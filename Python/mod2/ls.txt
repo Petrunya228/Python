@@ -1,0 +1,6 @@
+total 200
+-rw-r--r--  1 admin  staff      0 29 фев 22:22 ls.txt
+-rw-r--r--  1 admin  staff    519 29 фев 15:58 main.py
+-rw-r--r--@ 1 admin  staff  87248 29 фев 16:12 output_file.txt
+-rw-r--r--  1 admin  staff    860 29 фев 21:44 task1.py
+-rw-r--r--  1 admin  staff    694 29 фев 22:18 task2.py
