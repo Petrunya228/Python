@@ -1,0 +1,54 @@
+15:26:29 - started divide server
+15:26:29 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:26:29 - [33mPress CTRL+C to quit[0m
+15:26:29 -  * Restarting with stat
+15:26:29 - started divide server
+15:26:29 -  * Debugger is active!
+15:26:29 -  * Debugger PIN: 100-948-633
+15:26:42 - started divide server
+15:26:42 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+15:26:42 - [33mPress CTRL+C to quit[0m
+15:26:42 -  * Restarting with stat
+15:26:43 - started divide server
+15:26:43 -  * Debugger is active!
+15:26:43 -  * Debugger PIN: 100-948-633
+15:27:03 - form is valid. a=5, b=1
+15:27:03 - 127.0.0.1 - - [20/Mar/2024 15:27:03] "POST /divide/ HTTP/1.1" 200 -
+15:27:09 - form is valid. a=5, b=0
+15:27:09 - we are unable to divide by zero
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/Desktop/mod_6/task1.py", line 23, in divide
+    return f"a/b = {a/b:.2f}"
+                    ~^~
+ZeroDivisionError: division by zero
+15:27:09 - 127.0.0.1 - - [20/Mar/2024 15:27:09] "[31m[1mPOST /divide/ HTTP/1.1[0m" 400 -
+INFO:divider:started divide server
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:divider:started divide server
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-948-633
+DEBUG:divider:form is valid. a=5, b=0
+ERROR:divider:we are unable to divide by zero
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/Desktop/mod_6/task1.py", line 23, in divide
+    return f"a/b = {a/b:.2f}"
+                    ~^~
+ZeroDivisionError: division by zero
+INFO:werkzeug:127.0.0.1 - - [20/Mar/2024 15:28:04] "[31m[1mPOST /divide/ HTTP/1.1[0m" 400 -
